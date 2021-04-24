@@ -1,0 +1,14 @@
+header{
+    text-align: center;
+    margin: 20px auto;
+}
+
+main{
+    box-sizing: content-box;
+    height: 700px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
