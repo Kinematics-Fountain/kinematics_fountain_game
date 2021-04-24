@@ -10,5 +10,21 @@ main{
     padding-bottom: 10px;
 }
 
+#side_panel{
+    overflow-y: scroll;
+}
 
+h2{
+    text-align: center;
+    margin-top: .5em;
+}
 
+button#btn_go{
+    margin-top: 1em;
+}
+
+p#player_score{
+    text-align: center;
+    font-size: 3em;
+    font-family: "Courier New", sans-serif;
+}

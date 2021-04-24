@@ -17,21 +17,35 @@
                 
             </section>
             
-            <section id="side_panel" class="grid_4 border border-primary p-3 h-100">
-                <div id="instructions">
-                    <h2>Instructions</h2>
-                    <p>Lorem ipsum</p>
-                </div>
-                <div id="inputs">
-                    <h2>Inputs</h2>
-                    
-                </div>
-                <div id="score">
+            <aside id="side_panel" class="grid_4 border border-primary p-3 h-100">              
+                <div id="sec_score">
                     <h2>Score</h2>
+                    <p id="player_score">00</p>
                 </div>
                 
+                <hr>
                 
-            </section>
+                <div id="sec_inputs">
+                    <h2>Inputs</h2>
+                    <form>
+                        <label for="angle">Angle</label>
+                        <input type="text" name="angle" class="form-control">
+                        <label for="velocity">Velocity</label>
+                        <input type="text" name="velocity" class="form-control">
+                        <button type="button" id="btn_go" class="btn btn-primary">Go!</button>
+                    </form>
+                </div>
+                
+                <hr>
+                
+                <div id="sec_instructions">
+                    <h2>Instructions</h2>
+                    <div class="text-left">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis ex et libero volutpat auctor. Cras et egestas tellus, vel ultrices ipsum. In in tincidunt sapien. Mauris posuere interdum lorem eu pulvinar. Mauris convallis, nisl non vestibulum iaculis, nulla ex tempor felis, non ultricies est risus in tortor. In hac habitasse platea dictumst.</p>
+                    </div>
+                </div>
+                
+            </aside>
             
         </main>
         
