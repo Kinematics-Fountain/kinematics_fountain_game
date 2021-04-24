@@ -6,11 +6,9 @@ $(document).ready(function () {
      * Test Code
      * Controls located in footer
      */
-    var btn_hit = document.getElementById('test_hit');
-
-
-    $(btn_hit).click(hit());
-    $("#test_miss").click(miss());
+    
+    $("#test_hit").click(hit);
+    $("#test_miss").click(miss);
     
     
     function hit() {
