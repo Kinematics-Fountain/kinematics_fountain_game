@@ -25,6 +25,10 @@ aside#side_panel{
     overflow-y: scroll;
 }
 
+#side_panel img{
+    max-width: 270px;
+}
+
 h2{
     text-align: center;
     margin-top: .5em;

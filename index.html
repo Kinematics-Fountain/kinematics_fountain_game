@@ -33,11 +33,12 @@
                         <label for="velocity">Velocity (meters per second)</label>
                         <input id="input_velocity" type="text" name="velocity" class="form-control">
                         <label for="get_range">Target Range (meters):</label>
-                        <p id="input_range"></p>
+                        <div id="input_range"></div>
                         <script>
                             var range = 4;
                             document.getElementById("input_range").innerHTML = range; </script>
                         <button type="button" id="btn_go" class="btn btn-primary" onclick = "doClick()">Go!</button>
+                        <div id="hitbox"></div>
                     </form>
                 </div>
                 <div id="output">
@@ -71,7 +72,7 @@
                             <img src="imgs/range.png" alt=""/></li>
                         </ol>
                         <p>Try different inputs above to see physics in action!</p>
-                        <p><strong>Hint:</strong> The current range is <span id='rangeHint'>4</span> meters</p>
+<!--                        <p><strong>Hint:</strong> The current range is <span id='rangeHint'>4</span> meters</p>-->
                     </div>
                 </div>
 
