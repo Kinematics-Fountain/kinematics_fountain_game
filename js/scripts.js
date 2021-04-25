@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     var defaultScore = 0;
-    var defaultTP = 6
+    var defaultTP = 6;
 
     var score = defaultScore;
     var tp = defaultTP;
@@ -38,24 +38,7 @@ $(document).ready(function () {
         }
     }
 
-    function getRange() {
-        var minNumber = 1;
-        var maxNumber = 5;
-        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
-        $('#myRange').html(randomnumber);
-        return false;
-    }
 
-    function getRange(len) {
-    var randomNumber;
-    var n = '';
-
-    for(var count = 0; count < len; count++) {
-        randomNumber = Math.floor(Math.random() * 5);
-        n += randomNumber.toString();
-    }
-    return n;
-}
 
 document.getElementById("given_range").value = randomNumber(4);
 
