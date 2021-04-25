@@ -2,22 +2,22 @@
 $(document).ready(function () {
     var defaultScore = 0;
     var defaultTP = 6
-    
+
     var score = defaultScore;
     var tp = defaultTP;
-    
+
     var scoreCount = document.getElementById("player_score");
-    
-    
-    /* 
+
+
+    /*
      * Test Code
      * Controls located in footer
      */
-    
+
     $("#test_hit").click(hit);
     $("#test_miss").click(miss);
     $("#test_gameOver").click(gameOver);
-    
+
     //Increase score
     function hit() {
         score+=1;
@@ -29,9 +29,9 @@ $(document).ready(function () {
     function miss() {
         tp-=1;
         console.log('miss! TP count = ' + tp);
-        
+
         //TODO: TP drop
-        
+
         if (tp == 0){
             //TODO: trigger game over
             console.log('Better luck next time');
@@ -39,41 +39,45 @@ $(document).ready(function () {
     }
 
     function range() {
-        Math.floor((Math.random() * 5) + 1);
+        var minNumber = 1;
+        var maxNumber = 5;
+        var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
+        $('#myRange').html(randomnumber);  
+        return false;
     }
-    
-    
+
+
     //HYPE!!
     function showHype(){
-        
+
     }
-        
+
     //Drop TP roll on cherub's head
     function tpDrop(){
-        
+
     }
-    
+
     //Relocate the target graphic and associated values
     function moveTarget(){
-        
+
     }
-    
+
     //Game over
     function gameOver() {
         console.log('Game Over!');
         //TODO: Trigger graphics/text
-        
+
         //Reset Score
         score = defaultScore;
         scoreCount.innerHTML = score;
-        
+
         //Reset TP count
         tp = defaultTP;
-        
-        
+
+
         //TODO: relocate target
     }
-    
+
 
     /*Pseudocode
      *
