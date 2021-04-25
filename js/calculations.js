@@ -29,6 +29,7 @@ function doClick()
     var result = compareRange(gRange,cRange);
     var message = "The input range = the calculated range: ";
     message += result;
+    message += "<br> You landed at " + cRange;
 
 
     $("#output").html(message);
