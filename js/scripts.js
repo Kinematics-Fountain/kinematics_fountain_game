@@ -1,10 +1,10 @@
 
 $(document).ready(function () {
     var defaultScore = 0;
-    var defaultTP = 6;
+    //var defaultTP = 6;
 
     var score = defaultScore;
-    var tp = defaultTP;
+    //var tp = defaultTP;
 
     var scoreCount = document.getElementById("player_score");
 
@@ -18,33 +18,39 @@ $(document).ready(function () {
     $("#test_miss").click(miss);
     $("#test_gameOver").click(gameOver);
 
-    //Increase score
+    //If target is hit...
     function hit() {
         score+=1;
         scoreCount.innerHTML = score;
         console.log('hit!');
-        //TODO: trigger hype
+        showHype();
     }
 
+    //If target not hit...
     function miss() {
         tp-=1;
         console.log('miss! TP count = ' + tp);
 
         //TODO: TP drop
+        ctx.clearRect(70,20,100,100);
+        ctx.font = "40px Arial";
+        ctx.fillText(" x " + tp, 75, 55);
 
         if (tp == 0){
             //TODO: trigger game over
+            gameOver();
             console.log('Better luck next time');
         }
     }
 
 
-    //HYPE!!
+    //TODO: HYPE!!
     function showHype(){
-
+        console.log('HYPE! HYPE! HYPE!');
+        //effects triggered or go here
     }
 
-    //Drop TP roll on cherub's head
+    //TODO: Drop TP roll on cherub's head
     function tpDrop(){
 
     }
@@ -58,16 +64,23 @@ $(document).ready(function () {
     function gameOver() {
         console.log('Game Over!');
         //TODO: Trigger graphics/text
+        
+        reset();
 
+        //TODO: relocate target
+    }
+    
+    function reset(){
         //Reset Score
         score = defaultScore;
         scoreCount.innerHTML = score;
-
+        
         //Reset TP count
         tp = defaultTP;
-
-
-        //TODO: relocate target
+        ctx.clearRect(70,20,70,70);
+        ctx.font = "40px Arial";
+        ctx.fillText(" x " + tp, 75, 55);
+        
     }
 
 
