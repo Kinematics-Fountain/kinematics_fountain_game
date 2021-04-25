@@ -39,10 +39,6 @@ $(document).ready(function () {
     }
 
 
-
-document.getElementById("given_range").value = randomNumber(4);
-
-
     //HYPE!!
     function showHype(){
 
