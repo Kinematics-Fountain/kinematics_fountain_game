@@ -18,7 +18,7 @@ $(document).ready(function () {
     ctx.fillRect(500,500,20,20);
     
     //Ruler 100px = 1m
-    var ruler = 1;
+    var ruler = 0;
     for (i=100; i < 700; i+=100){
         ctx.font = "20px Arial";
         ctx.fillText(ruler, i, 680);
@@ -27,7 +27,7 @@ $(document).ready(function () {
         
     //Images
     var tp = new Image();
-    tp.src = 'imgs/devpost_thumbnail.jpg';
+    tp.src = 'imgs/tp.png';
     
     var statue = new Image();
     statue.src = 'imgs/statue.png';
@@ -35,7 +35,16 @@ $(document).ready(function () {
     var lily = new Image();
     lily.src = 'imgs/lilypad.png';
     
-    ctx.drawImage(tp, 10, 10, 70, 70);
+    
+    tp.onload = function(){
+        ctx.drawImage(tp, 10, 10);
+    };
+    statue.onload = function(){
+        ctx.drawImage(statue, 50, 150);
+    };
+    lily.onload = function(){
+        ctx.drawImage(lily, 10, 10);
+    };
     //canvas.drawImage();
     //canvas.drawImage();
     
