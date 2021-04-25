@@ -9,6 +9,7 @@ $(document).ready(function () {
     canvas.height = 700;
     
     var defaultTP = 6;
+    var tp = defaultTP;
     
     //placeholders
 //    ctx.fillRect(10, 10, 50,50);
@@ -26,27 +27,26 @@ $(document).ready(function () {
     };
         
     //Images
-    var tp = new Image();
-    tp.src = 'imgs/tp.png';
+    var img_tp = new Image();
+    img_tp.src = 'imgs/tp.png';
     
-    var statue = new Image();
-    statue.src = 'imgs/statue.png';
+    var img_statue = new Image();
+    img_statue.src = 'imgs/statue.png';
     
-    var lily = new Image();
-    lily.src = 'imgs/lilypad.png';
+    var img_lily = new Image();
+    img_lily.src = 'imgs/lilypad.png';
     
-    
-    tp.onload = function(){
-        ctx.drawImage(tp, 20, 20, 50, 50);
+    img_tp.onload = function(){
+        ctx.drawImage(img_tp, 20, 20, 50, 50);
     };
     ctx.font = "40px Arial";
-    ctx.fillText(" x " + defaultTP, 75, 55);
+    ctx.fillText(" x " + tp, 75, 55);
     
-    statue.onload = function(){
-        ctx.drawImage(statue, 15, 150);
+    img_statue.onload = function(){
+        ctx.drawImage(img_statue, 15, 150);
     };
-    lily.onload = function(){
-        ctx.drawImage(lily, 460, 500, 76, 43);
+    img_lily.onload = function(){
+        ctx.drawImage(img_lily, 460, 500, 76, 43);
     };
     
 
