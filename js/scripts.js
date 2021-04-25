@@ -1,7 +1,10 @@
 
 $(document).ready(function () {
-    var score = 0;
-    var tp = 6;
+    var defaultScore = 0;
+    var defaultTP = 6
+    
+    var score = defaultScore;
+    var tp = defaultTP;
     
     var scoreCount = document.getElementById("player_score");
     
@@ -20,14 +23,17 @@ $(document).ready(function () {
         score+=1;
         scoreCount.innerHTML = score;
         console.log('hit!');
+        //TODO: trigger hype
     }
 
     function miss() {
         tp-=1;
         console.log('miss! TP count = ' + tp);
         
+        //TODO: TP drop
+        
         if (tp == 0){
-            //TODO: game over
+            //TODO: trigger game over
             console.log('Better luck next time');
         }
     }
@@ -37,8 +43,35 @@ $(document).ready(function () {
     }
     
     
+    //HYPE!!
+    function showHype(){
+        
+    }
+        
+    //Drop TP roll on cherub's head
+    function tpDrop(){
+        
+    }
+    
+    //Relocate the target graphic and associated values
+    function moveTarget(){
+        
+    }
+    
+    //Game over
     function gameOver() {
         console.log('Game Over!');
+        //TODO: Trigger graphics/text
+        
+        //Reset Score
+        score = defaultScore;
+        scoreCount.innerHTML = score;
+        
+        //Reset TP count
+        tp = defaultTP;
+        
+        
+        //TODO: relocate target
     }
     
 
