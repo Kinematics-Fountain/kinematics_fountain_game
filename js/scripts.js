@@ -52,7 +52,7 @@
     function showHype(){
         console.log('HYPE! HYPE! HYPE!');
         //effects triggered or go here
-        $('#memebox').css("background","url('imgs/gifs/math_dog.gif')");
+        $('#memebox').css("background","url('imgs/gifs/happy_kid.gif')");
         $('#memebox').show('slow').delay(3000).hide('slow');
     }
 
