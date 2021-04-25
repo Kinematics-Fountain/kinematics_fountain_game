@@ -31,10 +31,11 @@
                         <label for="angle">Angle</label>
                         <input id="input_angle" type="text" name="angle" class="form-control">
                         <label for="velocity">Velocity</label>
-                        <input id="input_velocity" type="text" name="velocity" class="form-control">                        
+                        <input id="input_velocity" type="text" name="velocity" class="form-control">
                         <label for="given_range">Target Range</label>
-                        <div id="myRange"></div>
-                        <a href="no-javascript.html" id="range">Get number</a>
+                        <div id="input_range">
+                            <script>Math.floor(Math.random() * (5 + 1) + 1)</script>
+                        </div>
                         <button type="button" id="btn_go" class="btn btn-primary">Go!</button>
                     </form>
                 </div>

@@ -38,11 +38,11 @@ $(document).ready(function () {
         }
     }
 
-    function range() {
+    function getRange() {
         var minNumber = 1;
         var maxNumber = 5;
         var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
-        $('#myRange').html(randomnumber);  
+        $('#myRange').html(randomnumber);
         return false;
     }
 
