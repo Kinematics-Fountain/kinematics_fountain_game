@@ -6,38 +6,41 @@
         <link rel="stylesheet" href="css/960_16_col.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    
+
     <body>
         <header class="container_16 bg-info">
             <h1>Fun with Kinematics!</h1>
         </header>
-        
+
         <main class="container_16 border border-primary">
             <section id="game" class="grid_12 border border-primary h-100">
                 <canvas id="gameCanvas"></canvas>
             </section>
-            
-            <aside id="side_panel" class="grid_4 border border-primary p-3 h-100">              
+
+            <aside id="side_panel" class="grid_4 border border-primary p-3 h-100">
                 <div id="sec_score">
                     <h2>Score</h2>
                     <p id="player_score">00</p>
                 </div>
-                
+
                 <hr>
-                
+
                 <div id="sec_inputs">
                     <h2>Inputs</h2>
                     <form>
                         <label for="angle">Angle</label>
                         <input id="input_angle" type="text" name="angle" class="form-control">
-                        <label for="velocity">Velocity</label>
+                        <label for="velocity">Velocity (meters per second)</label>
                         <input id="input_velocity" type="text" name="velocity" class="form-control">
-                        <button type="button" id="btn_go" class="btn btn-primary">Go!</button>
+                        <label for="range">Target Range: 5 meters</label>
+                        <button type="button" id="btn_go" class="btn btn-primary" onclick = "doClick()">Go!</button>
                     </form>
                 </div>
-                
+                <div id="output">
+                    <p id = "output"></p>
+                </div>
                 <hr>
-                
+
                 <div id="sec_instructions">
                     <h2>Instructions</h2>
                     <div class="text-left">
@@ -53,9 +56,9 @@
                     <div class="text-left">
                         <p>SCIENCE-Y PHYSICS STUFF!</p>
                         <ol><li>Horizontal velocity is calculated by multiplying the initial velocity by cos(angle).<br>
-                                <img src="imgs/horizontal_velocity.png" alt=""/></li>                            
+                                <img src="imgs/horizontal_velocity.png" alt=""/></li>
                             <li>Vertical velocity is initial velocity multiplied by sin(angle)<br>
-                                <img src="imgs/vertical_velocity.png" alt=""/></li>                            
+                                <img src="imgs/vertical_velocity.png" alt=""/></li>
                             <li>The formula for time of flight is:<br>
                                 <img src="imgs/time.png" alt=""/></li>
                             <li>The formula for range (distance) is:<br>
@@ -65,16 +68,16 @@
                         <p><strong>Hint:</strong> The current range is <span id='rangeHint'>??</span></p>
                     </div>
                 </div>
-                
+
             </aside>
-            
+
         </main>
         <footer>
             <button id="test_hit">Test hit</button>
             <button id="test_miss">Test miss</button>
             <button id="test_gameOver">Test game over</button>
         </footer>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/calculations.js"></script>
