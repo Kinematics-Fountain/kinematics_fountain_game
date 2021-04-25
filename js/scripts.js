@@ -13,6 +13,7 @@ $(document).ready(function () {
     
     $("#test_hit").click(hit);
     $("#test_miss").click(miss);
+    $("#test_gameOver").click(gameOver);
     
     //Increase score
     function hit() {
@@ -22,14 +23,24 @@ $(document).ready(function () {
     }
 
     function miss() {
-        //TODO: decrease TP count
         tp-=1;
         console.log('miss! TP count = ' + tp);
+        
+        if (tp == 0){
+            //TODO: game over
+            console.log('Better luck next time');
+        }
     }
 
     function range() {
         Math.floor((Math.random() * 5) + 1);
     }
+    
+    
+    function gameOver() {
+        console.log('Game Over!');
+    }
+    
 
     /*Pseudocode
      *
