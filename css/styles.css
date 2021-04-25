@@ -44,6 +44,16 @@ p#player_score{
     font-family: "Courier New", sans-serif;
 }
 
+#memebox{
+    display: none;
+    position:relative;
+    margin:50px auto;
+    width: 300px;
+    height: 300px;
+    border: solid thin black;
+    background-image: url('../imgs/devpost_thumbnail.jpg');
+}
+
 footer{
     visibility: visible;
     clear:both;

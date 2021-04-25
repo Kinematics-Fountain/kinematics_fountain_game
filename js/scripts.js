@@ -35,6 +35,7 @@
 
         tpDrop(); //Trigger animation
         
+        
         ctx.clearRect(70,20,100,100);
         ctx.font = "40px Arial";
         ctx.fillText(" x " + tp, 75, 55);
@@ -51,11 +52,18 @@
     function showHype(){
         console.log('HYPE! HYPE! HYPE!');
         //effects triggered or go here
+        $('#memebox').css("background","url('imgs/gifs/math_dog.gif')");
+        $('#memebox').show('slow').delay(1000).hide('slow');
     }
 
     //TODO: Drop TP roll on cherub's head
     function tpDrop(){
 
+    }
+    
+    function sadMeme(){
+        $('#memebox').css("background","url('imgs/gifs/math_dog.gif')");
+        $('#memebox').show('slow').delay(1000).hide('slow');
     }
 
     //TODO: Relocate the target graphic and associated values
@@ -66,11 +74,11 @@
     //Game over
     function gameOver() {
         console.log('Game Over!');
-        //TODO: Trigger graphics/text
-                
+        
+        sadMeme();       
         reset();
         
-        //moveTarget();
+        //TODO: moveTarget();
     }
     
     function reset(){
