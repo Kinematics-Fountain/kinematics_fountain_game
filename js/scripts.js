@@ -23,7 +23,9 @@ $(document).ready(function () {
         score+=1;
         scoreCount.innerHTML = score;
         console.log('hit!');
-        showHype();
+        if(score%10 == 0){
+           showHype();
+        }
     }
 
     //If target not hit...
@@ -31,7 +33,8 @@ $(document).ready(function () {
         tp-=1;
         console.log('miss! TP count = ' + tp);
 
-        //TODO: TP drop
+        tpDrop(); //Trigger animation
+        
         ctx.clearRect(70,20,100,100);
         ctx.font = "40px Arial";
         ctx.fillText(" x " + tp, 75, 55);
@@ -55,7 +58,7 @@ $(document).ready(function () {
 
     }
 
-    //Relocate the target graphic and associated values
+    //TODO: Relocate the target graphic and associated values
     function moveTarget(){
 
     }
@@ -64,10 +67,10 @@ $(document).ready(function () {
     function gameOver() {
         console.log('Game Over!');
         //TODO: Trigger graphics/text
-        
+                
         reset();
-
-        //TODO: relocate target
+        
+        //moveTarget();
     }
     
     function reset(){
