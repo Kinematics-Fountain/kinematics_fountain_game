@@ -1,7 +1,7 @@
 /* 
  * HTML5 Canvas
  */
-$(document).ready(function () {
+//$(document).ready(function () {
 
     var canvas = document.getElementById("gameCanvas");
     var ctx = canvas.getContext('2d');
@@ -39,6 +39,7 @@ $(document).ready(function () {
     img_tp.onload = function(){
         ctx.drawImage(img_tp, 20, 20, 50, 50);
     };
+    
     ctx.font = "40px Arial";
     ctx.fillText(" x " + tp, 75, 55);
     
@@ -52,6 +53,6 @@ $(document).ready(function () {
 
     
 
-});
+//});
 
 
