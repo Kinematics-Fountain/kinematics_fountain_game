@@ -11,11 +11,11 @@ $(document).ready(function () {
     var defaultTP = 6;
     
     //placeholders
-    ctx.fillRect(10, 10, 50,50);
-    ctx.font = "40px Arial";
-    ctx.fillText(" x " + defaultTP, 60, 50);
-    ctx.fillRect(10, 300, 50,50);
-    ctx.fillRect(500,500,20,20);
+//    ctx.fillRect(10, 10, 50,50);
+//    ctx.font = "40px Arial";
+//    ctx.fillText(" x " + defaultTP, 60, 50);
+//    ctx.fillRect(10, 300, 50,50);
+//    ctx.fillRect(500,500,20,20);
     
     //Ruler 100px = 1m
     var ruler = 0;
@@ -37,18 +37,18 @@ $(document).ready(function () {
     
     
     tp.onload = function(){
-        ctx.drawImage(tp, 10, 10);
+        ctx.drawImage(tp, 20, 20, 50, 50);
     };
+    ctx.font = "40px Arial";
+    ctx.fillText(" x " + defaultTP, 75, 55);
+    
     statue.onload = function(){
-        ctx.drawImage(statue, 50, 150);
+        ctx.drawImage(statue, 15, 150);
     };
     lily.onload = function(){
-        ctx.drawImage(lily, 10, 10);
+        ctx.drawImage(lily, 460, 500, 76, 43);
     };
-    //canvas.drawImage();
-    //canvas.drawImage();
     
-    //function component
 
     
 
