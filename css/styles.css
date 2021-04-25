@@ -6,11 +6,22 @@ header{
 main{
     box-sizing: content-box;
     height: 700px;
+    width: 1080px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: auto;
 }
 
-#side_panel{
+section#game{
+    display: inline;
+    float: left;
+    margin: auto 10px;
+}
+
+aside#side_panel{
+    display: inline;
+    float: left;
+    width: 340px;
     overflow-y: scroll;
 }
 
@@ -27,4 +38,9 @@ p#player_score{
     text-align: center;
     font-size: 3em;
     font-family: "Courier New", sans-serif;
+}
+
+footer{
+    visibility: visible;
+    clear:both;
 }
