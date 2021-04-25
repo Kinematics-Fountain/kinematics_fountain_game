@@ -28,7 +28,7 @@ function doClick()
     var gRange = 4 //parseFloat($("#input_range").val()); // given range
     var cRange = projectileCalculate(v1,theta,dy,ay); // calculated range
     var result = compareRange(gRange,cRange);
-    var message = "The input range = the calculated range: ";
+    var message = "<br>The input range = the calculated range: ";
     message += result;
     message += "<br> You landed at " + cRange + " meters.";
 
