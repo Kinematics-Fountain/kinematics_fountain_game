@@ -46,6 +46,19 @@ $(document).ready(function () {
         return false;
     }
 
+    function getRange(len) {
+    var randomNumber;
+    var n = '';
+
+    for(var count = 0; count < len; count++) {
+        randomNumber = Math.floor(Math.random() * 5);
+        n += randomNumber.toString();
+    }
+    return n;
+}
+
+document.getElementById("given_range").value = randomNumber(4);
+
 
     //HYPE!!
     function showHype(){
