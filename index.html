@@ -14,7 +14,7 @@
         
         <main class="container_16 border border-primary">
             <section id="game" class="grid_12 border border-primary h-100">
-                
+                <canvas id="gameCanvas"></canvas>
             </section>
             
             <aside id="side_panel" class="grid_4 border border-primary p-3 h-100">              
@@ -41,11 +41,28 @@
                 <div id="sec_instructions">
                     <h2>Instructions</h2>
                     <div class="text-left">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis ex et libero volutpat auctor. Cras et egestas tellus, vel ultrices ipsum. In in tincidunt sapien.</p>
+                        <p>Help the fountain cherub take a leak and aim for the lily pad.</p>
+                        <ol>
+                            <li>Enter stream angle and velocity (speed).</li>
+                            <li>Press the button!</li>
+                            <li>Score points by hitting the lily pad. Adjust your inputs as needed.</li>
+                            <li>Don't run out of TP!</li>
+                        </ol>
                     </div>
                     <h2>Why It Works</h2>
                     <div class="text-left">
-                        <p>SCIENCE STUFF HERE! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>SCIENCE-Y PHYSICS STUFF!</p>
+                        <ol><li>Horizontal velocity is calculated by multiplying the initial velocity by cos(angle).<br>
+                                <img src="imgs/horizontal_velocity.png" alt=""/></li>                            
+                            <li>Vertical velocity is initial velocity multiplied by sin(angle)<br>
+                                <img src="imgs/vertical_velocity.png" alt=""/></li>                            
+                            <li>The formula for time of flight is:<br>
+                                <img src="imgs/time.png" alt=""/></li>
+                            <li>The formula for range (distance) is:<br>
+                            <img src="imgs/range.png" alt=""/></li>
+                        </ol>
+                        <p>Try different inputs above to see physics in action!</p>
+                        <p><strong>Hint:</strong> The current range is <span id='rangeHint'>??</span></p>
                     </div>
                 </div>
                 
@@ -61,6 +78,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/calculations.js"></script>
+        <script src="js/canvas.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
