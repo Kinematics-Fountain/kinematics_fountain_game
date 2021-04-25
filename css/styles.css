@@ -51,8 +51,13 @@ p#player_score{
     width: 300px;
     height: 300px;
     border: solid thin black;
-    background-image: url('../imgs/devpost_thumbnail.jpg');
+    object-fit: contain;
 }
+/*#memebox>img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}*/
 
 footer{
     visibility: visible;

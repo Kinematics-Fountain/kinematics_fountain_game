@@ -53,7 +53,7 @@
         console.log('HYPE! HYPE! HYPE!');
         //effects triggered or go here
         $('#memebox').css("background","url('imgs/gifs/math_dog.gif')");
-        $('#memebox').show('slow').delay(1000).hide('slow');
+        $('#memebox').show('slow').delay(3000).hide('slow');
     }
 
     //TODO: Drop TP roll on cherub's head
@@ -63,7 +63,7 @@
     
     function sadMeme(){
         $('#memebox').css("background","url('imgs/gifs/math_dog.gif')");
-        $('#memebox').show('slow').delay(1000).hide('slow');
+        $('#memebox').show('slow').delay(3000).hide('slow');
     }
 
     //TODO: Relocate the target graphic and associated values
