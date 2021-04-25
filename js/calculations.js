@@ -8,6 +8,7 @@ function projectileCalculate(v1,theta,dy,ay)
 // Compare calculated range to assigned range
 function compareRange(gRange,cRange)
 {
+    var result = false;
     if (gRange == cRange) {
         result = true;
     }
@@ -31,6 +32,11 @@ function doClick()
     message += result;
     message += "<br> You landed at " + cRange;
 
-
     $("#output").html(message);
+    
+    if(result){
+        hit();
+    } else {
+        miss();
+    }
 }

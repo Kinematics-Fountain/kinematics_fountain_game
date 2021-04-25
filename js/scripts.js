@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+//$(document).ready(function () {
     var defaultScore = 0;
     //var defaultTP = 6;
 
@@ -85,6 +85,11 @@ $(document).ready(function () {
         ctx.fillText(" x " + tp, 75, 55);
         
     }
+    
+    //function doClick(){
+        //var result = calculations();
+       // console.log("Result is " + result);
+   // }
 
 
     /*Pseudocode
@@ -102,4 +107,4 @@ $(document).ready(function () {
      *      miss! TP count decreases
      *
      */
-});
+//});
