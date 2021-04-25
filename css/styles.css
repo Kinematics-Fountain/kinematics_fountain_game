@@ -60,6 +60,6 @@ p#player_score{
 }*/
 
 footer{
-    visibility: visible;
+    visibility: hidden;
     clear:both;
 }
